@@ -22,9 +22,9 @@ def open_or_closed():
                            "\nplease enter the branch name here: ").title()
         if branch == 'New York':
             if h >= '00' and h < '21':
-                    ny_chg = int(h) + 3
+                ny_chg = int(h) + 3
             elif h >= '21':
-                    ny_chg = '0'+str(int(h) - 21)
+                ny_chg = '0'+str(int(h) - 21)
             ny_time = ':'.join([str(ny_chg), m])
             
             if portland_time > '06:00' and portland_time < '18:00':
