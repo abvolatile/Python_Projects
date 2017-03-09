@@ -1,7 +1,7 @@
 #
 # PYTHON:   version 2.7.13
 # AUTHOR:   Annie M Bowman
-# PURPOSE:  Tech Academy Python Course DRILL #61
+# PURPOSE:  Tech Academy Python Course DRILL #62
 #               Use datetime to get local time in NY & London 
 #               based on current time @ Portland HQ and check
 #               to see whether NY and/or London branches are open
