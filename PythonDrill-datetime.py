@@ -16,15 +16,16 @@ def open_or_closed():
     
     check = True
     while check:
-        print "Welcome! The current time in Portland is {}.".format(portland_time)
-        branch = raw_input("All of our branches are open from 09:00 to 21:00 local time."
-                           "\nIf you'd like to know whether a certain branch is open,"
-                           "\nplease enter the branch name here: ").title()
+        print "Welcome to HQ! The current time in Portland is {}.\n".format(portland_time)
+        branch = raw_input("We also have branches in New York and London!"
+                           "\nAll branches are open from 09:00 to 21:00 local time."
+                           "\n\nTo find out if your local branch is open right now,"
+                           "\ntype in the city name: ").title()
         if branch == 'New York':
             if h >= '00' and h < '21':
-                ny_chg = int(h) + 3
+                    ny_chg = int(h) + 3
             elif h >= '21':
-                ny_chg = '0'+str(int(h) - 21)
+                    ny_chg = '0'+str(int(h) - 21)
             ny_time = ':'.join([str(ny_chg), m])
             
             if portland_time > '06:00' and portland_time < '18:00':
